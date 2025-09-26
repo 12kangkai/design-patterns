@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodDemo", "Behav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorDemo", "Behavioral\VisitorDemo\VisitorDemo.csproj", "{3AA2AA3B-F294-4453-9A11-C537F061CD92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDemo.Tests", "SingletonDemo.Tests\SingletonDemo.Tests.csproj", "{C42E3DC3-4831-45D6-8A48-1EF4BC85A25B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.SingletonDemo", "SingletonDemo.Tests\Tests.SingletonDemo.csproj", "{C42E3DC3-4831-45D6-8A48-1EF4BC85A25B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

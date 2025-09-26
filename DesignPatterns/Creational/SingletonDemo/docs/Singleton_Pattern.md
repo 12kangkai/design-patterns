@@ -36,14 +36,3 @@
 
 ---
 
-## 5. 示例目录结构
-Creational/
-└─ SingletonDemo/
-├─── Program.cs
-├─── LazySingleton.cs
-├─── EagerSingleton.cs
-├─── DoubleCheckLockSingleton.cs
-├─── StaticInnerClassSingleton.cs
-├─── LazySingletonUnsafe.cs
-└─── README.md
-
