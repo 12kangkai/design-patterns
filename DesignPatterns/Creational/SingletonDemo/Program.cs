@@ -3,7 +3,6 @@ using System;
 namespace SingletonDemo
 {
     // Singleton
-    // TODO: 在此实现或调用该设计模式的示例代码。保持示例简单、可运行，并在 README.md 中记录要点与运行命令.
 
     class Program
     {
