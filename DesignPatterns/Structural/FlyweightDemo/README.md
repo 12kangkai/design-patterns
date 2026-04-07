@@ -263,9 +263,13 @@ Console.WriteLine(object.ReferenceEquals(log1, log2)); // true
 ## **九、优点**
 
 ✅ 大幅减少内存占用
+
 ✅ 提高系统性能（减少 GC 压力）
+
 ✅ 适用于高频对象场景
+
 ✅ 对象复用，提升效率
+
 
 
 
@@ -274,7 +278,9 @@ Console.WriteLine(object.ReferenceEquals(log1, log2)); // true
 ## **十、缺点**
 
 ❌ 增加系统复杂度
+
 ❌ 外部状态管理困难
+
 ❌ 线程安全需额外处理
 
 
