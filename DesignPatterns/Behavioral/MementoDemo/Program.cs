@@ -1,21 +1,41 @@
 using System;
+using MementoDemo.Simple;
 
 namespace MementoDemo
 {
     // Memento
-    // TODO: 在此实现或调用该设计模式的示例代码。保持示例简单、可运行，并在 README.md 中记录要点与运行命令.
 
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Memento 示例 ===");
+            Console.WriteLine("=== Memento 备忘录模式 示例 ===");
             Console.WriteLine();
             Console.WriteLine("说明：在该项目的 Program.cs 中实现 Memento 的示例代码，或引用其他文件进行组织。");
             Console.WriteLine();
             Console.WriteLine("运行命令（示例）：");
             Console.WriteLine($"dotnet run --project Behavioral/MementoDemo/MementoDemo.csproj");
             Console.WriteLine();
+
+            var editor = new Editor();
+            var history = new History();
+
+            editor.Content = "A";
+            history.Push(editor.Save());
+
+            editor.Content = "AB";
+            history.Push(editor.Save());
+            
+            editor.Content = "ABC";
+
+            Console.WriteLine(editor.Content); // ABC
+            
+            editor.Restore(history.Pop());
+            Console.WriteLine(editor.Content); // AB
+            
+            editor.Restore(history.Pop());
+            Console.WriteLine(editor.Content);// A
+            
         }
     }
 }
